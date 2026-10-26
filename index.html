@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VEYRA</title>
+    <meta name="description" content="Calibre V1. 214 parts, laid bare." />
+    <meta name="theme-color" content="#0E0C0A" />
+
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=sentient@300,400,300i&f[]=switzer@400,500&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap" />
+    <link rel="preload" as="image" type="image/avif" href="./assets/video/anatomy-poster.avif" fetchpriority="high" />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="site-header__brand" href="#top">VEYRA</a>
+      <a class="site-header__cta" href="#viewing" data-scroll-to>Request a viewing</a>
+    </header>
+
+    <main id="top">
+      <section class="anatomy" aria-label="Anatomy of the Calibre V1" data-anatomy>
+        <div class="anatomy__stage" data-stage>
+          <div class="anatomy__frame" data-frame aria-hidden="true">
+            <picture>
+              <source type="image/avif" srcset="./assets/video/anatomy-poster.avif" />
+              <img class="anatomy__poster" src="./assets/video/anatomy-poster.webp" width="1920" height="1080" alt="" fetchpriority="high" />
+            </picture>
+            <video class="anatomy__video" muted playsinline preload="none" disablepictureinpicture data-video></video>
+          </div>
+
+          <div class="anatomy__loader" data-loader aria-hidden="true"></div>
+
+          <div class="scale" data-scale aria-hidden="true">
+            <ol class="scale__marks">
+              <li>01</li>
+              <li>02</li>
+              <li>03</li>
+              <li>04</li>
+              <li>05</li>
+              <li>06</li>
+            </ol>
+            <span class="scale__hand" data-scale-hand></span>
+          </div>
+
+          <article class="station station--hero" data-station="hero">
+            <picture class="station__still">
+              <source type="image/avif" srcset="./assets/video/anatomy-poster.avif" />
+              <img src="./assets/video/anatomy-poster.webp" width="1920" height="1080" alt="A steel watch with its movement exposed, its caseback and crystal on the bench beside it." />
+            </picture>
+            <p class="hero__brand" data-reveal>VEYRA</p>
+            <div class="station__body">
+              <h1 class="station__title hero__title" data-split>Time, taken&nbsp;apart.</h1>
+              <p class="station__caption" data-reveal>Calibre V1. 214 parts, laid bare.</p>
+              <span class="hero__hint" data-reveal aria-hidden="true"><i></i></span>
+            </div>
+          </article>
+
+          <article class="station station--case" data-station="case">
+            <picture class="station__still">
+              <source type="image/avif" srcset="./assets/video/stills/station-01.avif" />
+              <img src="./assets/video/stills/station-01.webp" width="1920" height="1080" alt="The steel case with the movement inside, caseback and crystal lying behind it." loading="lazy" decoding="async" />
+            </picture>
+            <svg class="callout" data-callout aria-hidden="true"><path pathLength="1" /><circle r="6" /></svg>
+            <div class="station__body">
+              <p class="station__label"><span data-reveal>01 / Case</span></p>
+              <h2 class="station__title" data-split>Steel, sapphire, nothing to&nbsp;hide.</h2>
+              <ul class="station__specs">
+                <li data-reveal>40 mm</li>
+                <li data-reveal>9.8 mm</li>
+                <li data-reveal><span data-anchor="r">sapphire crystal</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="station station--barrel" data-station="barrel">
+            <picture class="station__still">
+              <source type="image/avif" srcset="./assets/video/stills/station-02.avif" />
+              <img src="./assets/video/stills/station-02.webp" width="1920" height="1080" alt="The mainspring barrel on the bench, its coiled spring visible through the open top." loading="lazy" decoding="async" />
+            </picture>
+            <svg class="callout" data-callout aria-hidden="true"><path pathLength="1" /><circle r="6" /></svg>
+            <div class="station__body">
+              <p class="station__label"><span data-reveal data-anchor="l">02 / Barrel</span></p>
+              <h2 class="station__title" data-split>70 hours, coiled.</h2>
+              <p class="station__caption" data-reveal>A spring 32&nbsp;cm long, wound into 11&nbsp;mm.</p>
+              <p class="counter" data-reveal><span data-hours>0</span><small>h</small></p>
+            </div>
+          </article>
+
+          <article class="station station--train" data-station="train">
+            <picture class="station__still">
+              <source type="image/avif" srcset="./assets/video/stills/station-03.avif" />
+              <img src="./assets/video/stills/station-03.webp" width="1920" height="1080" alt="The gilt wheels of the gear train inside the open case." loading="lazy" decoding="async" />
+            </picture>
+            <svg class="callout" data-callout aria-hidden="true"><path pathLength="1" /><circle r="6" /></svg>
+            <div class="station__body">
+              <p class="station__label"><span data-reveal>03 / Gear train</span></p>
+              <h2 class="station__title" data-split>One slow release of energy, turned into steady&nbsp;time.</h2>
+              <svg class="train" viewBox="0 0 320 120" data-train data-anchor="r" aria-hidden="true">
+                <path pathLength="1" d="M40 72 L112 46 L170 76 L222 44 L276 70" />
+                <circle pathLength="1" cx="40" cy="72" r="30" />
+                <circle pathLength="1" cx="112" cy="46" r="22" />
+                <circle pathLength="1" cx="170" cy="76" r="17" />
+                <circle pathLength="1" cx="222" cy="44" r="14" />
+                <circle pathLength="1" cx="276" cy="70" r="11" />
+              </svg>
+            </div>
+          </article>
+
+          <article class="station station--escapement" data-station="escapement">
+            <picture class="station__still">
+              <source type="image/avif" srcset="./assets/video/stills/station-04.avif" />
+              <img src="./assets/video/stills/station-04.webp" width="1920" height="1080" alt="The escape wheel and pallet fork, close up, with red jewels on the pallets." loading="lazy" decoding="async" />
+            </picture>
+            <svg class="callout" data-callout aria-hidden="true"><path pathLength="1" /><circle r="6" /></svg>
+            <div class="station__body">
+              <p class="station__label"><span data-reveal data-anchor="l">04 / Escapement</span></p>
+              <h2 class="station__title" data-split>8 beats every second.</h2>
+              <p class="station__caption" data-reveal>691,200 a day.</p>
+              <p class="counter counter--beats" data-reveal><i class="pulse" aria-hidden="true"></i><span data-beats>0</span></p>
+            </div>
+          </article>
+
+          <article class="station station--jewel" data-station="jewel">
+            <picture class="station__still">
+              <source type="image/avif" srcset="./assets/video/stills/station-05.avif" />
+              <img src="./assets/video/stills/station-05.webp" width="1920" height="1080" alt="A red ruby jewel set in a gilt bridge, holding the end of a pivot." loading="lazy" decoding="async" />
+            </picture>
+            <svg class="callout" data-callout aria-hidden="true"><path pathLength="1" /><circle r="6" /></svg>
+            <div class="station__body">
+              <p class="station__label"><span data-reveal data-anchor="l">05 / Jewels</span></p>
+              <h2 class="station__title" data-split>27 rubies, where steel would meet&nbsp;steel.</h2>
+            </div>
+          </article>
+
+          <article class="station station--knolling" data-station="knolling">
+            <picture class="station__still">
+              <source type="image/avif" srcset="./assets/video/stills/station-06.avif" />
+              <img src="./assets/video/stills/station-06.webp" width="1920" height="1080" alt="All the parts of the watch laid out in rows from above: screws, wheels, bridges, the case, caseback and crystal." loading="lazy" decoding="async" />
+            </picture>
+            <div class="hotspots" data-hotspots aria-label="Parts" role="list"></div>
+            <div class="station__body">
+              <p class="station__title knolling__caption" data-split>214 parts. Every one accounted&nbsp;for.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="manifesto" aria-label="Manifesto" data-manifesto>
+        <h2 class="manifesto__text">
+          <span class="manifesto__a">Most watches ask you to trust them.</span>
+          <span class="manifesto__b" data-manifesto-reveal>This one lets you <span class="manifesto__check" data-check>check</span>.</span>
+        </h2>
+        <svg class="manifesto__underline" data-underline aria-hidden="true"><path pathLength="1" /><circle r="5" /></svg>
+      </section>
+
+      <section class="watchmaker" aria-labelledby="watchmaker-title">
+        <div class="hands" data-hands>
+          <div class="hands__media" data-shutter>
+            <picture class="hands__photo">
+              <source type="image/avif" srcset="./assets/photos/web/watchmaker-hands-1440.avif 1440w, ./assets/photos/web/watchmaker-hands-2400.avif 2400w" sizes="100vw" />
+              <img src="./assets/photos/web/watchmaker-hands-2400.webp" srcset="./assets/photos/web/watchmaker-hands-1440.webp 1440w, ./assets/photos/web/watchmaker-hands-2400.webp 2400w" sizes="100vw" width="2752" height="1536" alt="A watchmaker's hands lowering a wheel into a movement with tweezers, a loupe and a screwdriver on the wooden bench." loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <div class="hands__text">
+            <h2 class="watchmaker__title" id="watchmaker-title">One watch, one pair of&nbsp;hands.</h2>
+            <p class="watchmaker__lead">Anouk Ferrand assembles every V1 she signs. Three weeks, from loose parts to a running watch, at one bench in Le&nbsp;Sentier.</p>
+          </div>
+        </div>
+
+        <div class="weeks" data-weeks>
+          <div class="weeks__media">
+            <picture class="weeks__photo">
+              <source type="image/avif" srcset="./assets/photos/web/bench-1440.avif 1440w, ./assets/photos/web/bench-2400.avif 2400w" sizes="100vw" />
+              <img src="./assets/photos/web/bench-2400.webp" srcset="./assets/photos/web/bench-1440.webp 1440w, ./assets/photos/web/bench-2400.webp 2400w" sizes="100vw" width="2752" height="1536" alt="An open watch on a movement holder, its caseback and crystal beside it, tools at the edge of the bench." loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <svg class="weeks__track" viewBox="0 0 2752 1536" data-track aria-hidden="true"></svg>
+          <ol class="weeks__list">
+            <li class="week" style="--y: 13.6%">
+              <p class="week__no">Week one</p>
+              <h3 class="week__name">Finishing</h3>
+              <p class="week__text">Every bridge is bevelled and polished by hand, including the edges no one is meant to&nbsp;see.</p>
+            </li>
+            <li class="week" style="--y: 47.3%">
+              <p class="week__no">Week two</p>
+              <h3 class="week__name">Assembly</h3>
+              <p class="week__text">214 parts, fitted and oiled in order. The barrel goes in&nbsp;first.</p>
+            </li>
+            <li class="week" style="--y: 80.9%">
+              <p class="week__no">Week three</p>
+              <h3 class="week__name">Regulation</h3>
+              <p class="week__text">Timed in six positions over five days, then&nbsp;cased.</p>
+            </li>
+          </ol>
+        </div>
+
+        <figure class="signature" data-signature>
+          <div class="signature__photo" data-signature-photo>
+            <picture>
+              <source type="image/avif" srcset="./assets/photos/web/signature-1440.avif 1440w, ./assets/photos/web/signature-2400.avif 2400w" sizes="70vw" />
+              <img src="./assets/photos/web/signature-2400.webp" srcset="./assets/photos/web/signature-1440.webp 1440w, ./assets/photos/web/signature-2400.webp 2400w" sizes="70vw" width="2752" height="1536" alt="The initials A.F engraved on a steel bridge, between a ruby jewel and a blued screw." loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <figcaption class="signature__caption" data-signature-caption>Her initials sit under the balance. You can&nbsp;check.</figcaption>
+          <svg class="signature__callout" data-signature-callout aria-hidden="true"><path pathLength="1" /><circle r="6" /></svg>
+        </figure>
+      </section>
+
+      <section class="collection" aria-label="Collection">
+        <div class="lineup" data-lineup>
+          <picture>
+            <source type="image/avif" srcset="./assets/photos/web/collection-lineup-1440.avif 1440w, ./assets/photos/web/collection-lineup-2400.avif 2400w" sizes="100vw" />
+            <img src="./assets/photos/web/collection-lineup-2400.webp" srcset="./assets/photos/web/collection-lineup-1440.webp 1440w, ./assets/photos/web/collection-lineup-2400.webp 2400w" sizes="100vw" width="2752" height="1536" alt="The three V1 models side by side on dark leather: slate-grey Ash, black Ink and cream Bone." loading="lazy" decoding="async" data-lineup-img />
+          </picture>
+        </div>
+
+        <div class="model" data-model>
+          <div class="model__view">
+            <picture class="model__dial is-active" data-dial="ash">
+              <source type="image/avif" srcset="./assets/photos/web/dial-ash-1440.avif 1440w, ./assets/photos/web/dial-ash-2400.avif 2400w" sizes="60vw" />
+              <img src="./assets/photos/web/dial-ash-2400.webp" srcset="./assets/photos/web/dial-ash-1440.webp 1440w, ./assets/photos/web/dial-ash-2400.webp 2400w" sizes="60vw" width="2400" height="1792" alt="V1 Ash from above: slate-grey dial, steel case, brown strap." loading="lazy" decoding="async" />
+            </picture>
+            <picture class="model__dial" data-dial="ink">
+              <source type="image/avif" srcset="./assets/photos/web/dial-ink-1440.avif 1440w, ./assets/photos/web/dial-ink-2400.avif 2400w" sizes="60vw" />
+              <img src="./assets/photos/web/dial-ink-2400.webp" srcset="./assets/photos/web/dial-ink-1440.webp 1440w, ./assets/photos/web/dial-ink-2400.webp 2400w" sizes="60vw" width="2400" height="1792" alt="V1 Ink from above: black dial, steel case, brown strap." loading="lazy" decoding="async" />
+            </picture>
+            <picture class="model__dial" data-dial="bone">
+              <source type="image/avif" srcset="./assets/photos/web/dial-bone-1440.avif 1440w, ./assets/photos/web/dial-bone-2400.avif 2400w" sizes="60vw" />
+              <img src="./assets/photos/web/dial-bone-2400.webp" srcset="./assets/photos/web/dial-bone-1440.webp 1440w, ./assets/photos/web/dial-bone-2400.webp 2400w" sizes="60vw" width="2400" height="1792" alt="V1 Bone from above: cream dial, steel case, brown strap." loading="lazy" decoding="async" />
+            </picture>
+            <picture class="model__caseback" data-caseback>
+              <source type="image/avif" srcset="./assets/photos/web/caseback-1440.avif 1440w, ./assets/photos/web/caseback-2400.avif 2400w" sizes="60vw" />
+              <img src="./assets/photos/web/caseback-2400.webp" srcset="./assets/photos/web/caseback-1440.webp 1440w, ./assets/photos/web/caseback-2400.webp 2400w" sizes="60vw" width="2400" height="1792" alt="The V1 turned over: the calibre seen through the sapphire caseback." loading="lazy" decoding="async" />
+            </picture>
+            <div class="glint" data-glint aria-hidden="true"><i></i></div>
+            <div class="assembly" data-assembly aria-hidden="true">
+              <picture class="assembly__part" style="--size: 42%" data-part="movement">
+                <source type="image/avif" srcset="./assets/photos/web/layer-movement.avif" />
+                <img src="./assets/photos/web/layer-movement.webp" width="880" height="880" alt="" loading="lazy" decoding="async" />
+              </picture>
+              <picture class="assembly__part" style="--size: 44.2%" data-part="dial">
+                <source type="image/avif" srcset="./assets/photos/web/layer-dial.avif" />
+                <img src="./assets/photos/web/layer-dial.webp" width="880" height="880" alt="" loading="lazy" decoding="async" />
+              </picture>
+              <picture class="assembly__part" style="--size: 45.9%" data-part="case">
+                <source type="image/avif" srcset="./assets/photos/web/layer-case.avif" />
+                <img src="./assets/photos/web/layer-case.webp" width="880" height="880" alt="" loading="lazy" decoding="async" />
+              </picture>
+            </div>
+          </div>
+
+          <div class="model__info">
+            <div class="model__mask"><h2 class="model__name" data-model-name>V1 Ash</h2></div>
+            <div class="model__mask"><p class="model__line" data-model-line>Grey as the bench it was built on.</p></div>
+
+            <div class="dials" role="radiogroup" aria-label="Dial">
+              <label class="dials__option">
+                <input type="radio" name="dial" value="ash" checked />
+                <span class="dials__swatch" style="--swatch: #6b6d6c"></span>
+                <span>Ash</span>
+              </label>
+              <label class="dials__option">
+                <input type="radio" name="dial" value="ink" />
+                <span class="dials__swatch" style="--swatch: #17181a"></span>
+                <span>Ink</span>
+              </label>
+              <label class="dials__option">
+                <input type="radio" name="dial" value="bone" />
+                <span class="dials__swatch" style="--swatch: #e4d8bd"></span>
+                <span>Bone</span>
+              </label>
+            </div>
+
+            <button class="turn" type="button" aria-pressed="false" data-turn>Turn over</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="viewing" id="viewing" aria-labelledby="viewing-title">
+        <picture class="viewing__photo">
+          <source type="image/avif" srcset="./assets/photos/web/atelier-piece-1440.avif 1440w, ./assets/photos/web/atelier-piece-2400.avif 2400w" sizes="100vw" />
+          <img src="./assets/photos/web/atelier-piece-2400.webp" srcset="./assets/photos/web/atelier-piece-1440.webp 1440w, ./assets/photos/web/atelier-piece-2400.webp 2400w" sizes="100vw" width="2752" height="1536" alt="A V1 with a gem-set bezel and cream dial on a black cushion, an open walnut box behind it." loading="lazy" decoding="async" />
+        </picture>
+        <div class="viewing__shade" data-shade aria-hidden="true"></div>
+        <div class="gems" data-gems aria-hidden="true"></div>
+        <p class="viewing__caption">Atelier piece. Shown only in person.</p>
+
+        <div class="viewing__body">
+          <h2 class="viewing__title" id="viewing-title">See it in person.</h2>
+          <form class="form" novalidate data-form>
+            <div class="field">
+              <label for="f-name">Name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="f-name-error" />
+              <p class="field__error" id="f-name-error" data-error="name"></p>
+            </div>
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="f-email-error" />
+              <p class="field__error" id="f-email-error" data-error="email"></p>
+            </div>
+            <div class="field">
+              <label for="f-city">City</label>
+              <input id="f-city" name="city" type="text" autocomplete="address-level2" required aria-describedby="f-city-error" />
+              <p class="field__error" id="f-city-error" data-error="city"></p>
+            </div>
+            <button class="button" type="submit" data-magnetic><span>Request a viewing</span></button>
+          </form>
+          <p class="form__success" role="status" data-success></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__brand">VEYRA</p>
+      <p>A fictional manufacture. Demo site.</p>
+      <p data-year>2026</p>
+      <p class="footer__beats">Since you arrived, a V1 has beaten <span data-since>0</span> times.</p>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

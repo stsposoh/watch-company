@@ -1,0 +1,26 @@
+# Dependencies and build output
+node_modules/
+dist/
+
+# OS and editor noise
+.DS_Store
+
+# Local tooling: AI agent configs (CLAUDE.md and AGENTS.md are symlinks to a local folder), Playwright runs
+.claude/
+.cursor/
+.cursorignore
+.playwright-mcp/
+CLAUDE.md
+AGENTS.md
+
+# Assets: only the web versions the page loads are published, source files stay local.
+/assets/*
+!/assets/video/
+!/assets/photos/
+/assets/video/*
+!/assets/video/anatomy.mp4
+!/assets/video/anatomy-poster.avif
+!/assets/video/anatomy-poster.webp
+!/assets/video/stills/
+/assets/photos/*
+!/assets/photos/web/
